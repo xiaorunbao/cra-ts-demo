@@ -38,7 +38,7 @@ function env(name: string, init: string): string {
 export const ECHO = env('ECHO', 'true').toLocaleLowerCase() === 'true';
 export const VERSION = env('VERSION', '0.0.0');
 export const BUILD = env('BUILD', '20221130-000000');
-export const COPYRIGHT = env('COPYRIGHT', 'esunny');
+export const COPYRIGHT = env('COPYRIGHT', 'cra');
 
 /**
  * app

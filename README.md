@@ -1,16 +1,15 @@
-# Esunny-ts-cra
+# cra-ts-cra
 
-Esunny typscripts cra 脚手架
+CRA typscripts cra 脚手架
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 
 ## Development
 
 Create a .env.local file under repo root path. Find available environments in `src/config/env` or `.env`.
 
 ```.env.local
-REACT_APP_TITLE=Esunny
+REACT_APP_TITLE=web
 ```
 
 Install pnpm first.
@@ -39,14 +38,14 @@ pnpm add -g ts-node
 
 ## Mock server
 
-需要编写的文件 mock 文件在 `mock/api` 下， 使用 [json-server](https://www.npmjs.com/package/json-server) 包进行mock
+需要编写的文件 mock 文件在 `mock/api` 下， 使用 [json-server](https://www.npmjs.com/package/json-server) 包进行 mock
 
-有两种方式使用mock server
+有两种方式使用 mock server
 
-1. 直接执行 `pnpm start:mock`, mock server 会自动启动，此时 访问 `/api/xxx` 可直接对数据进行增删改查。 缺点是mock文件改变后不会热启动，需要重新执行 `pnpm start:mock`, 在开发中使用不太方便, 这种方法比较适合在展示时使用。
+1. 直接执行 `pnpm start:mock`, mock server 会自动启动，此时 访问 `/api/xxx` 可直接对数据进行增删改查。 缺点是 mock 文件改变后不会热启动，需要重新执行 `pnpm start:mock`, 在开发中使用不太方便, 这种方法比较适合在展示时使用。
 
-2. 执行 `pnpm start`, 同时打开另外一个终端执行 `pnpm dev:mock` 这样 mock-server 会单独启动，监听端口默认为 3001, 此时 访问 `http://localhost:3001/api/xxx` 可直接访问mock api。
-这种方式下修改完mock文件会自动更新mock服务，比较适合开发中使用
+2. 执行 `pnpm start`, 同时打开另外一个终端执行 `pnpm dev:mock` 这样 mock-server 会单独启动，监听端口默认为 3001, 此时 访问 `http://localhost:3001/api/xxx` 可直接访问 mock api。
+   这种方式下修改完 mock 文件会自动更新 mock 服务，比较适合开发中使用
 
 ## Tech Stack
 
@@ -99,7 +98,7 @@ pnpm add -g ts-node
 
 ## Contribute
 
-- 从 `ynnuse-mss/esunny-ts-cra` fork 到自己名下
+- 从 `cra-ts-cra` fork 到自己名下
 - git clone
 - 本地代码迁出一个 feat/bug 分支，git checkout -b feat/charge-record-list
 - 开发
@@ -109,11 +108,10 @@ pnpm add -g ts-node
 - 提交 pull request
   - gh pr create
   - 根据提示，最后一步 `continue on browser`
-  - 目标选择 `ynnuse-mss/esunny-ts-cra` main 分支
+  - 目标选择 `cra-ts-cra` main 分支
 
 ## 文件命名规则
 
 文件名全部使用小写字母和连词线（all-lowercase-with-dashes）
 
 参考[阮一峰老师的博文](https://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html)
-
