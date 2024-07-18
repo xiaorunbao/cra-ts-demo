@@ -8,7 +8,6 @@ import { RoutePathDefinition } from 'src/lib/routing';
 const HomePage = lazy(() => import('src/containers/home/home.page'));
 const PetPage = lazy(() => import('src/containers/pet/pet.page'));
 const StorePage = lazy(() => import('src/containers/store/store.page'));
-const EchartPage = lazy(() => import('src/containers/echart/demo.page'));
 
 export const mainRoute: RoutePathDefinition = {
   path: '/',
@@ -18,7 +17,6 @@ export const mainRoute: RoutePathDefinition = {
     { title: '首页', path: 'home', icon: <HomeOutlined />, element: <HomePage /> },
     { title: '宠物', path: 'pet', icon: <GithubOutlined />, element: <PetPage /> },
     { title: '商店', path: 'store', icon: <TaobaoOutlined />, element: <StorePage /> },
-    { title: 'echarts-demo', path: 'demo', icon: <TaobaoOutlined />, element: <EchartPage /> },
   ],
 };
 

@@ -1,7 +1,6 @@
 import { ConfigProvider, Spin } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import 'moment';
-import 'moment-duration-format';
 import 'moment/locale/zh-cn';
 import { Suspense } from 'react';
 
